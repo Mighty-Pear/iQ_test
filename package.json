@@ -1,0 +1,11 @@
+{
+  "name": "test-iq-pl",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Niewerbalny test rozumowania płynnego (IQ) w przeglądarce – dla polskich użytkowników",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "license": "MIT"
+}

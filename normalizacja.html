@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weryfikacja i normalizacja</title>
+  <meta name="description" content="Ponowne przeliczenie wyników, analiza psychometryczna zadań i wyliczanie norm.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Weryfikacja wyników i normalizacja</h1>
+    <p>Wczytaj jeden lub wiele plików wyników (JSON) pobranych po teście. Narzędzie:</p>
+    <ul>
+      <li>ponownie przelicza każdy wynik z zapisanych odpowiedzi i sprawdza zgodność z wersją zadań i sumą kontrolną,</li>
+      <li>liczy statystyki psychometryczne: średnie, odchylenia, rzetelność KR-20, łatwość i moc różnicującą zadań,</li>
+      <li>generuje plik <code>js/norms.js</code> z normami empirycznymi oraz plik CSV do analizy w R, SPSS lub Excelu.</li>
+    </ul>
+    <p class="small muted">Pliki są przetwarzane wyłącznie w przeglądarce – nic nie jest wysyłane.</p>
+    <div class="card">
+      <label for="files">Pliki wyników (.json)</label>
+      <input id="files" type="file" accept=".json,application/json" multiple>
+    </div>
+    <div id="out"></div>
+  </main>
+  <footer class="site-footer"><a href="index.html">← Powrót do testu</a> · <a href="docs/METODOLOGIA.md">Metodologia i źródła</a></footer>
+  <script src="js/rng.js"></script>
+  <script src="js/matrices.js"></script>
+  <script src="js/series.js"></script>
+  <script src="js/bank.js"></script>
+  <script src="js/norms.js"></script>
+  <script src="js/scoring.js"></script>
+  <script src="js/norming.js"></script>
+</body>
+</html>
